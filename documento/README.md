@@ -102,7 +102,7 @@ Adicionalmente, la arquitectura general sigue el patrón **MVC**:
 
 ## Arquitectura del Sistema
 
-![Diagrama de Arquitectura](https://img.plantuml.biz/plantuml/svg/ZLJRRjim47pVhnZ8RQ8kxk8QI8CW2G2Xb0e3OhCaJBsaKcPDWv8RO9D_lsnTiw96OKj78QpxxttrtCxOxHYSf42YX4Y3K4L2xm6DkBm0H5HboYIbDwtCzXBQIGzRS0YBBl_cEBQcn5OByYn3tU_r2qakenBtdDs2K-FVI_OCHakWpn9aTS7P9qIZe2kBVmSwMwELXmzqBXaqf1gWZTa2aNPOzOHo40uvsyNJUoQWSxxlWVb5A2RbyNu3xPJK4aV4S5e0RcIhEsqTWKGwWaqG9r0ZH8jIFse1TEzG_AoqtEMRaSjfUZC2gU9D3lIaXCQ7JhlHFCw-60GNKdPaicZXzGWtX5a4dgzGkbLM3Dw6p4bucGqUKK0I_WxyK3FuxF5sgl3QMgoMrUUC3mQVdKAom7BsrTkrJcExZWoZ8kNptw1V7rv7x1BlsM7lq85PZ4mclPlUU3Ebvvf745G9C68mVdonV7nCCz4mrL4kgdB7MQT3oTpzwKMULJs4xUHfJPFOQLOy3Ir4N-fwLE89vWkOP7m_qZ0HIb-2zT-wJdju55qiIrcaPLrzNB6wlfv-CwMex6GkcPsJxrPv3qvaFrnT-UFCaXV0OttSxRAuKPsSld7_0G00)
+![Diagrama de Arquitectura](./demo_ventas/diagrama_arquitectura.png)
 
 ### Tabla de Capas
 
@@ -112,7 +112,7 @@ Adicionalmente, la arquitectura general sigue el patrón **MVC**:
 | **Business Logic (Server)** | Lógica del negocio | Procesar reglas de negocio, validaciones y coordinación | Servicios de préstamo, validación de disponibilidad, cálculo de multas |
 | **Data Access Layer (Repository)** | Acceso a datos | Intermediario entre la lógica y la base de datos | Repositorios de Libro, Socio, Préstamo |
 | **Database** | Base de datos SQLite/PostgreSQL | Persistir datos del sistema | Tablas: libros, socios, prestamos, ejemplares, multas |
-| **Common/Domain** | Clases de dominio | Modelos compartidos entre capas | Libro, Socio, Préstamo, Ejemplar, Multa |
+| **Common/Domain** | Clases de dominio | Modelos compartidos entre capas | Libro, Socio, Préstamo, Ejemplar, Multa (carpeta Model) |
 | **Database Manager** | Singleton de conexión | Gestionar conexión única a la BD | DatabaseManager (patrón Singleton) |
 
 ---
