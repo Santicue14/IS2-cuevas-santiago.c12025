@@ -1,21 +1,21 @@
-class UsuarioSingleton:
+"""
+Sistema de Gestión de Biblioteca
+Arquitectura en capas: View -> Controller -> Service -> Repository -> DAL
+"""
+import sys
+from pathlib import Path
 
-    _instance = None
+# Agregar el directorio src al path para permitir imports absolutos
+sys.path.insert(0, str(Path(__file__).parent))
 
-    def __new__(cls,nombre: str):
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-            cls._instance._nombre = nombre
-        return cls._instance
-    
-    def obtenerNombre(self):
-        return self._nombre
+from view.menu import Menu
 
 
-# Prueba del singleton
-s1 = UsuarioSingleton("Santiago")
+def main():
+    """Función principal del sistema"""
+    menu = Menu()
+    menu.ejecutar()
 
-s2 = UsuarioSingleton("Juan")
 
-print(s1.obtenerNombre())
-print(s2.obtenerNombre())
+if __name__ == "__main__":
+    main()
