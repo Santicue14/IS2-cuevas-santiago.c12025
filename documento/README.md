@@ -110,7 +110,7 @@ Es un patrón de diseño creacional que garantiza que una clase tenga una única
 
 ## Diagrama de Clases UML - Patrón Singleton
 
-![Diagrama de clases](./DiagramaClases.png)
+![Diagrama de clases](./DiagramaClasess.png)
 
 ---
 
