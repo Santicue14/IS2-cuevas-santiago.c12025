@@ -104,19 +104,19 @@ Es un patrón de diseño creacional que garantiza que una clase tenga una única
 
 ## Diagrama de Arquitectura UML - Capas del Sistema
 
-![Diagrama de arquitectura](./DiagramaArquitectura.svg.svg)
+![Diagrama de arquitectura](./DiagramaArquitectura.png)
 
 ---
 
 ## Diagrama de Clases UML - Patrón Singleton
 
-![Diagrama de clases](./DiagramaClases.svg)
+![Diagrama de clases](./DiagramaClases.png)
 
 ---
 
 ## Diagrama de Secuencia - Flujo de un Préstamo
 
-![Diagrama de secuencia](./DiagramaSecuencia.svg)
+![Diagrama de secuencia](./DiagramaSecuencia.png)
 
 ---
 
