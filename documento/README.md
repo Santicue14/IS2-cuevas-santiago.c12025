@@ -96,7 +96,7 @@ Es un patrón de diseño creacional que garantiza que una clase tenga una única
 Adicionalmente, la arquitectura general sigue el patrón **MVC**:
 - **Modelo**: Clases de dominio (Libro, Socio, Préstamo) y acceso a datos
 - **Vista**: Interfaz de usuario (formularios, listas, reportes)
-- **Controlador**: Lógica de negocio que coordina entre vista y modelo
+- **Controlador**: Lógica de negocio que coordina entre vista y modelo.
 
 ---
 
